@@ -16,6 +16,8 @@ app.use(logger('dev'))
 
 // API
 
+const api = require('./routes/api')
+app.use('/api',api)
 
 
 app.listen(PORT, () => {
